@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+</head>
+<body>
+    <header class="w-full h-16 bg-slate-400 drop-shadow-lg fixed z-20">
+        <div class="container px-4 md:px-0 h-full mx-auto flex justify-between items-center">
+            
+                    <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="logo" class="w-2/3 md:w-2/5">
+
+            
+            <ul id="menu" class="hidden text-center fixed top-0 right-0 px-10q py-16 bg-gray-800 z-50
+                md:relative md:flex md:p-0 md:bg-transparent md:flex-row md:space-x-6 ">
+
+                <li class="md:hidden z-90 fixed top-4 right-6">
+                    <a href="javascript:void(0)" class="text-right text-white text-4xl"
+                        onclick="toggleMenu()">&times;</a>
+                </li>
+
+                <li>
+                    <a class="text-white opacity-70 hover:opacity-100 duration-300" href="#">Home</a>
+                </li>
+                <li>
+                    <a class="text-white opacity-70 hover:opacity-100 duration-300" href="#">Something</a>
+                </li>
+                <li>
+                    <a class="text-white opacity-70 hover:opacity-100 duration-300" href="#">Forums</a>
+                </li>
+
+                <li>
+                    <a class="text-white opacity-70 hover:opacity-100 duration-300" href="#">About</a>
+                </li>
+                <li>
+                    <a class="text-white opacity-70 hover:opacity-100 duration-300 mr-2" href="#">Contact</a>
+                </li>
+            </ul>
+
+            
+            <div class="flex items-center md:hidden">
+                <button class="text-white text-4xl font-bold opacity-70 hover:opacity-100 duration-300"
+                    onclick="toggleMenu()">
+                    &#9776;
+                </button>
+            </div>
+
+    </header>
+
+    <main>
+        <div class=" absolute top-10 flex flex-col justify-center w-full my-3">
+            <h2 class="text-black font-bold m-auto my-2 -z-10">Handcrafted, home-made masterpieces</h2>
+            <input type="text" placeholder="Enter your email address " class=" w-4/5 m-auto my-2 -z-10 md:w-3/5 bg-slate-300">
+            <button class="my-2 border-2 border-transparent w-28 m-auto bg-yellow-400 rounded-md hover:bg-orange-500 -z-10">GET STARTED</button>
+        </div>
+        
+            <div class="flex absolute top-44 ml-3 items-center -z-10  md:w-full md:justify-center">
+                <div class="w-1/4 md:w-auto md:mx-8 ">
+                <i class="fa fa-3x fa-fire text-orange-500" ></i>
+                </div>
+                <div class="w-3/4">
+                <h2 class=" text-black font-bold">Premium Materials</h2>
+                <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+             </div>
+            </div>
+            <div class="flex absolute top-80 ml-3 items-center -z-10 md:w-full md:justify-center">
+                <div class="w-1/4 md:w-auto md:mx-8">
+                <i class="fa fa-3x fa-truck text-orange-500" ></i>
+                </div>
+                <div class="w-3/4">
+                <h2 class=" text-black font-bold">Fast Shipping</h2>
+                <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+             </div>
+            </div>
+            <div class="flex absolute top-96 ml-3 items-center mt-24 -z-10 md:w-full md:justify-center">
+                <div class="w-1/4 md:w-auto md:mx-8">
+                <i class="fa fa-3x fa-battery-full text-orange-500" ></i>
+                </div>
+                <div class="w-3/4">
+                <h2 class=" text-black font-bold">Quality Assurance</h2>
+                <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+             </div>
+            </div>
+            <div class="w-full  h-fit flex absolute top-full md:top-[90%] lg:top-[90%]  mx-auto">
+                <iframe class="m-auto content-center w-4/5 md:h-56 lg:w-1/2 " src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+            </div>
+            <div class="flex absolute top-full mt-44 w-full mx-auto flex-col lg:flex-row lg:justify-evenly ">
+                <div class="w-3/4 border-solid border-2 border-black mx-auto text-center my-2 lg:w-[30%]">
+                    <h2 class="bg-slate-300 font-bold">TENOR TROMBONE</h2>
+                    <h3 class="font-bold">$600</h3>
+                    <ul >
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum dolor.</li>
+                        <li>Lorem ipsum.</li>
+                    </ul>
+                    <button class="bg-yellow-400 my-3 w-20 rounded-lg hover:bg-orange-400">SELECT</button>
+                </div>
+                <div class="w-3/4 border-solid border-2 border-black mx-auto text-center mb-2 lg:w-[30%]">
+                    <h2 class="bg-slate-300 font-bold">BASS TROMBONE</h2>
+                    <h3 class="font-bold">$900</h3>
+                    <ul >
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum dolor.</li>
+                        <li>Lorem ipsum.</li>
+                    </ul>
+                    <button class="bg-yellow-400 my-3 w-20 rounded-lg hover:bg-orange-400">SELECT</button>
+                </div>
+                <div class="w-3/4 border-solid border-2 border-black mx-auto text-center mb-2 lg:w-[30%]">
+                    <h2 class="bg-slate-300 font-bold">VALVE TROMBONE</h2>
+                    <h3 class="font-bold">$1200</h3>
+                    <ul >
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum dolor.</li>
+                        <li>Lorem ipsum.</li>
+                    </ul>
+                    <button class="bg-yellow-400 my-3 w-20 rounded-lg hover:bg-orange-400">SELECT</button>
+                </div>
+            </div>
+    </main>
+    <footer class="absolute  top-full bottom-0 mt-[50rem] w-full lg:mt-[25rem]">
+        <div class="bg-slate-300">
+        <ul class=" flex flex-row ">
+            <li><a href="#" class="text-xs mx-2">privacy</a></li>
+            <li><a href="#" class="text-xs mx-2">Terms</a></li>
+            <li><a href="#" class="text-xs mx-2">Contact</a></li>
+        </ul>
+        <span class="text-xs mt-5 mx-2 font-thin"> Copyright 2016, Original Trombones</span>
+        </div>
+    </footer>
+
+   
+    <script>
+        var menu = document.getElementById('menu');
+        function toggleMenu() {
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('w-full');
+            menu.classList.toggle('h-screen');
+        }
+    </script>
+</body>
+</html>
